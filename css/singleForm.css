@@ -4,8 +4,8 @@ body {
 
 @font-face {
     font-family: "Avenir Black";
-    src: url("./public/fonts/Avenir-Black.ttf");
-    src: url("./public/fonts/Avenir-Black.ttf") format("ttf")
+    src: url("./fonts/Avenir-Black.ttf");
+    src: url("./fonts/Avenir-Black.ttf") format("ttf")
 }
 @font-face {
     font-family: "Avenir Book";
@@ -66,7 +66,7 @@ body {
     border-radius: 25px;
     height: 40px;
     width: 245px;
-    margin-top: 14px;
+    margin-top: 40px;
     font-family: "Avenir Heavy";
     font-size: 18px;
     background: #dabb08;
@@ -106,13 +106,15 @@ body {
     margin-top: 25px;
     margin-bottom: 7px;
     font-family: "Avenir Heavy";
+    color: #fff
     width: 245px;
     font-size: 18px;
     
 }
 
 .entry {
-    margin-top: 7px;
+    margin-top: 25px;
+    border-radius: 5px;
     font-family: "Avenir Heavy";
     min-width: 245px;
 }
@@ -137,7 +139,7 @@ input .entry {
     font-family: "Avenir Heavy";
     margin-left: 20%;
     /* margin-right: 10%; */
-    margin-top: -65px;
+    /* margin-top: -15px; */
 }
 
 .radio-wrapper {
@@ -146,10 +148,12 @@ input .entry {
     align-items: center;
     justify-content: center;
     height: 14px;
+    border-radius: 15px;
+    margin-top: 25px;
     width: 175px;
     font-family: "Avenir Heavy";
     box-shadow: 0 0 50px 15px #dabb08 !important;
-    border: #dabb08 solid 3.5px;
+    border: #dabb08 solid 0px;
 
     /* margin-left: 2%; */
     /* margin-right: 10%; */
