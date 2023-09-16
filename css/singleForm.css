@@ -63,21 +63,24 @@ body {
     border-radius: 15px;
     height: 40px;
     width: 60px;
-    background-color: '#dabb08';
+    background-color: '#48abe0';
     /* margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2px; */
     font-family: "Avenir Heavy";
     font-size: 16px;
-    background: #dabb08;
+    background: #48abe0;
+    box-shadow: 0 0 10px 5px #48abe0;
 }
 .btn-submit {
     border-radius: 25px;
     height: 40px;
     width: 245px;
-    margin-top: 10px;
+    margin-top: 14px;
     font-family: "Avenir Heavy";
-
+    font-size: 18px;
+    background: #dabb08;
+    box-shadow: 0 0 21px 7px #dabb08;
 }
 .btn-back {
     border-radius: 25px;
@@ -125,6 +128,8 @@ body {
 }
 .entry:focus {
     border: #dabb08 solid 3.5px;
+    box-shadow: 0 0 50px 15px #dabb08;
+    
 }
 
 input .entry {
@@ -153,7 +158,15 @@ input .entry {
     height: 14px;
     width: 175px;
     font-family: "Avenir Heavy";
+    box-shadow: 0 0 50px 15px #dabb08 !important;
+    border: #dabb08 solid 3.5px;
+
     /* margin-left: 2%; */
     /* margin-right: 10%; */
     /* margin-top: -65px; */
+}
+
+.flex-itemRow {
+    font-size: 18px;
+    font-family: "Avenir Heavy";
 }

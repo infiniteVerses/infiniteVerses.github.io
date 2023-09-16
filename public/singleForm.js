@@ -113,14 +113,16 @@ $('#p2-no').on('click', function() {
     $('#p2-no-f').prop('checked', true);
     $('#p2-yes-f').prop('checked', false);
 });
-$('#entry.1').on('keypress', function(e) {
-    var newVal = $('#entry.1').val();
-    var entryField = '#entry.398480167';
+$('#q-entry1').on('keyup', function(e) {
+    var newVal = $('#q-entry1').val();
+    var entryField = '#entry1';
+    console.log("q-entry1 keypress", {newVal}, {entryField})
     $(entryField).val(newVal);
 })
-$('#entry.3').on('keypress', function(e) {
-    var newVal = $('#entry.3').val();
-    var entryField = '#entry.1481841116';
+$('#q-entry3').on('keyup', function(e) {
+    var newVal = $('#q-entry3').val();
+    var entryField = '#entry3';
+    console.log("q-entry3 keypress", {newVal}, {entryField})
     $(entryField).val(newVal);
 })
 

@@ -23,23 +23,23 @@
     </div> -->
 <div id="holo-form">
     <div class="prompt currentPrompt ecoGal-container" id="p1-container">
-        <label class="labelText ecoGal-label" for="entry.1">What is shifting inside of you?</label></br>
-        <input class="entry ecoGal-input" placeholder="The wind, the earth, the fire, the sea..." name="entry.1">
+        <label class="labelText ecoGal-label" for="q-entry1">What is shifting inside of you?</label></br>
+        <input class="entry ecoGal-input" placeholder="The wind, the earth, the fire, the sea..." id="q-entry1">
     </div>
     
     <div class="prompt inactivePrompt ecoGal-container" id="p2-container">
-        <label class="labelText ecoGal-label" for="entry.2">Have you been to an ecstatic dance before?</label></br>
+        <label class="labelText ecoGal-label" for="q-entry.2">Have you been to an ecstatic dance before?</label></br>
         <!-- <input class="entry ecoGal-radio" name="entry.1904503391"> -->
         <fieldset class="entry radio-wrapper">
             <!-- <legend>Please select one of the following</legend> -->
-            <input checked class="flex-itemRow" type="radio" name="entry.2" id="p2-yes" value="Yes" /><label for="p2-yes">Yes</label>
-            <input class="flex-itemRow" type="radio" name="entry.2" id="p2-no" value="No"  /><label for="p2-no">No</label>
+            <input checked class="flex-itemRow" type="radio" name="q-entry2" id="p2-yes" value="Yes" /><label for="p2-yes">Yes</label>
+            <input class="flex-itemRow" type="radio" name="q-entry2" id="p2-no" value="No"  /><label for="p2-no">No</label>
         </fieldset>
         <!-- <p class="progressText">2 / 3</p> -->
     </div>
     <div class="prompt inactivePrompt ecoGal-container" id="p3-container">
-        <label class="labelText ecoGal-label" for="entry.3">What are your dietary preferences?</label></br>
-        <textarea class="entry ecoGal-text" name="entry.3"></textarea>
+        <label class="labelText ecoGal-label" for="q-entry3">What are your dietary preferences?</label></br>
+        <textarea class="entry ecoGal-text" id="q-entry3"></textarea>
         <!-- <p class="progressText">3 / 3</p> -->
     </div>
 </div>
@@ -48,18 +48,18 @@
 
 
     <form class="inactivePrompt" id="singleLine-googleForm">
-        <div class="inactivePrompt">
-            <input class="entry ecoGal-input" placeholder="The wind, the earth, the fire, the sea..." name="entry.398480167">
+        <!-- <div class="inactivePrompt"> -->
+            <input class="inactivePrompt entry ecoGal-input" id="entry1" placeholder="The wind, the earth, the fire, the sea..." name="entry.398480167">
           
-            <fieldset class="entry radio-wrapper">
+            <fieldset class="inactivePrompt entry radio-wrapper">
                 <!-- <legend>Please select one of the following</legend> -->
                 <input checked class="flex-itemRow" type="radio" name="entry.1904503391" id="p2-yes-f" value="Yes" /><label for="p2-yes">Yes</label>
                 <input class="flex-itemRow" type="radio" name="entry.1904503391" id="p2-no-f" value="No"  /><label for="p2-no">No</label>
             </fieldset>
           
-            <textarea class="entry ecoGal-text" name="entry.1481841116"></textarea>
+            <textarea class="inactivePrompt entry ecoGal-text" id="entry3" name="entry.1481841116"></textarea>
 
-        </div>
+        <!-- </div> -->
 
         <div class="prompt inactivePrompt ecoGal-container" id="submit-container">
             
