@@ -1,23 +1,107 @@
+body {
+    overflow: hidden;
+}
 .prompt {
-
+    height: 125px;
+    width: 350px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Avenir";
+    background-color: '#017877';
+    overflow: hidden;
 }
 
-.currentPrompt {
+/* .currentPrompt {
+    display: block;
+    font-family: "Avenir";
 
-}
+} */
 
 .inactivePrompt {
+    display: none !important;
+    /* font-family: "Avenir"; */
 
 }
 
 .btn-submit {
+    border-radius: 25px;
+    height: 40px;
+    width: 80px;
+    /* margin: 25% 25% 25% 25%; */
+    font-family: "Avenir";
+
+}
+.btn-back {
+    border-radius: 25px;
+    height: 40px;
+    width: 35px;
+    margin-left: 15%;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    font-family: "Avenir";
+
+}
+.btn-reset {
+    border-radius: 25px;
+    height: 40px;
+    width: 35px;
+    margin-right: 15%;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    font-family: "Avenir";
+
+}
+
+.progressText {
+    margin-top: 23.5px;
+    margin-bottom: 25px;
+    font-family: "Avenir";
+    margin-left: 2%;
+    margin-right: 2%;
 
 }
 
 .labelText {
-
+    margin-top: 25px;
+    margin-bottom: 7px;
+    font-family: "Avenir";
+    width: 190px;
+    
 }
 
 .entry {
+    margin-top: 7px;
+    font-family: "Avenir";
+
+}
+
+input .entry {
+    font-family: "Avenir";
+    width: 175px;
     
+}
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 175px;
+    font-family: "Avenir";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -65px;
+}
+
+.radio-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    width: 175px;
+    font-family: "Avenir";
+    margin-left: 2%;
+    margin-right: 10%;
+    /* margin-top: -65px; */
 }
