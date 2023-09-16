@@ -59,8 +59,10 @@ body {
     margin-bottom: 2px; */
     font-family: "Avenir Heavy";
     font-size: 16px;
-    background: #48abe0;
-    box-shadow: 0 0 10px 5px #48abe0;
+    color: #dabb08;
+    /* -webkit-text-stroke: 0.5px black; */
+    background: #698869;
+    box-shadow: 0 0 10px 3px #698869;
 }
 .btn-submit {
     border-radius: 25px;
@@ -106,7 +108,9 @@ body {
     margin-top: 25px;
     margin-bottom: 7px;
     font-family: "Avenir Heavy";
-    color: #fff
+    color: #dabb08;
+    -webkit-text-stroke: 0.25px black;
+
     width: 245px;
     font-size: 18px;
     
