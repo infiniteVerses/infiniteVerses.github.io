@@ -74,6 +74,12 @@ body {
     background: #dabb08;
     box-shadow: 0 0 21px 7px #dabb08;
 }
+.btn-std:hover {
+    background: #a5b7a5 !important;
+}
+.btn-submit:hover {
+    background: #ecdd83 !important;
+}
 .btn-back {
     border-radius: 25px;
     height: 40px;
