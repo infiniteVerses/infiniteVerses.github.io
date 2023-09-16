@@ -4,36 +4,36 @@ body {
 
 @font-face {
     font-family: "Avenir Black";
-    src: url("./public/fonts/Avenir Black.ttf");
-    src: url("./public/fonts/Avenir Black.ttf") format("ttf"),
+    src: url("./public/fonts/Avenir-Black.ttf");
+    src: url("./public/fonts/Avenir-Black.ttf") format("ttf"),
     /* url("./public/fonts/CustomFont.otf") format("opentype"), */
     /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
 }
 @font-face {
     font-family: "Avenir Book";
-    src: url("./public/fonts/Avenir Book.ttf");
-    src: url("./public/fonts/Avenir Book.ttf") format("ttf"),
+    src: url("./public/fonts/Avenir-Book.ttf");
+    src: url("./public/fonts/Avenir-Book.ttf") format("ttf"),
     /* url("./public/fonts/CustomFont.otf") format("opentype"), */
     /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
 }
 @font-face {
     font-family: "Avenir Heavy";
-    src: url("./public/fonts/Avenir Heavy.ttf");
-    src: url("./public/fonts/Avenir Heavy.ttf") format("ttf"),
+    src: url("./public/fonts/Avenir-Heavy.ttf");
+    src: url("./public/fonts/Avenir-Heavy.ttf") format("ttf"),
     /* url("./public/fonts/CustomFont.otf") format("opentype"), */
     /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
 }
 @font-face {
     font-family: "Avenir Regular";
-    src: url("./public/fonts/Avenir Regular.ttf");
-    src: url("./public/fonts/Avenir Regular.ttf") format("ttf"),
+    src: url("./public/fonts/Avenir-Regular.ttf");
+    src: url("./public/fonts/Avenir-Regular.ttf") format("ttf"),
     /* url("./public/fonts/CustomFont.otf") format("opentype"), */
     /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
 }
 @font-face {
     font-family: "Avenir Light";
-    src: url("./public/fonts/Avenir Light.ttf");
-    src: url("./public/fonts/Avenir Light.ttf") format("ttf"),
+    src: url("./public/fonts/Avenir-Light.ttf");
+    src: url("./public/fonts/Avenir-Light.ttf") format("ttf"),
     /* url("./public/fonts/CustomFont.otf") format("opentype"), */
     /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
 }
