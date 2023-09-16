@@ -89,8 +89,8 @@ $('#btn-next').on('click', function () {
         $('#btn-prev').prop('disabled', false);
         $('#btn-next').prop('disabled', false);
     }
-    $(afterPage).addClass('currentPrompt');
     $(afterPage).removeClass('inactivePrompt');
+    $(afterPage).addClass('currentPrompt');
     $('.progressText').text(currentPage + ' / 3');
     $('#submit-container').addClass('inactivePrompt');
     $('#holo-form').removeClass('inactivePrompt');
