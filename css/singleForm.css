@@ -124,7 +124,7 @@ body {
     min-width: 245px;
 }
 .entry:focus {
-    background: #dabb08;
+    border: #dabb08 solid 3.5px;
 }
 
 input .entry {
