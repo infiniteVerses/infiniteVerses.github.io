@@ -2,40 +2,14 @@ var currentPage = 1;
 var maxPage = 3;
 $(window).on('load', function() {
     console.log("singleForm.js loaded")
-//     $(window).keydown(function(event){
-//       if(event.keyCode == 13) {
-//         event.preventDefault();
-//         return false;
-//       }
-//     });
-//   });
-$(window).on('keydown',function(e) {
-    var keyCode = e.key;
-
-    if(keyCode == '13'){
-        // $('#btn-next').trigger('click');
-        e.preventDefault();
-        return false;
-        
-    }
-})
-$(window).on('keyup',function(e) {
-    var keyCode = e.key;
-
-    if(keyCode == '13'){
-        // $('#btn-next').trigger('click');
-        e.preventDefault();
-        return false;
-        
-    }
-})
+    
 $(window).on('keypress',function(e) {
     var keyCode = e.key;
     console.log({e}, {keyCode});
-    if(keyCode == '13'){
+    if(keyCode == '13' || keyCode == 'Enter'){
         $('#btn-next').trigger('click');
-        e.preventDefault();
-        return false;
+        // e.preventDefault();
+        // return false;
         
     } else if (keyCode == '39') {
         $('#btn-next').trigger('click');
@@ -44,51 +18,21 @@ $(window).on('keypress',function(e) {
     }
     
 });
-$('input').on('keypress', function(e) {
-    var keyCode = e.key;
-    console.log({e}, {keyCode});
-    if(keyCode == '13'){
-        $('#btn-next').trigger('click');
-        e.preventDefault();
-        return false;
+// $('.entry').on('keypress', function(e) {
+//     var keyCode = e.key;
+//     console.log({e}, {keyCode});
+//     if(keyCode == '13' || keyCode == 'Enter'){
+//         $('#btn-next').trigger('click');
+//         // e.preventDefault();
+//         // return false;
         
-    } else if (keyCode == '39') {
-        // $('#btn-next').trigger('click');
-        // event.preventDefault();
-        // return false;
-    }
+//     } else if (keyCode == '39') {
+//         // $('#btn-next').trigger('click');
+//         // event.preventDefault();
+//         // return false;
+//     }
     
-})
-$('input').on('keydown', function(e) {
-    var keyCode = e.key;
-    console.log({e}, {keyCode});
-    if(keyCode == '13'){
-        // $('#btn-next').trigger('click');
-        e.preventDefault();
-        return false;
-        
-    } else if (keyCode == '39') {
-        // $('#btn-next').trigger('click');
-        // event.preventDefault();
-        // return false;
-    }
-    
-})
-$('input').on('keyup', function(e) {
-    var keyCode = e.key;
-    console.log({e}, {keyCode});
-    if(keyCode == '13'){
-        // $('#btn-next').trigger('click');
-        e.preventDefault();
-        return false;
-        
-    } else if (keyCode == '39') {
-        // $('#btn-next').trigger('click');
-        // event.preventDefault();
-        // return false;
-    }
-    
-})
+// })
 
 $('#btn-next').on('click', function () {
     $('#btn-prev').prop('disabled', false);

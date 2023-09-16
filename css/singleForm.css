@@ -1,34 +1,82 @@
 body {
     overflow: hidden;
 }
+
+@font-face {
+    font-family: "Avenir Black";
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Black.ttf");
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Black.ttf") format("ttf"),
+    /* url("./public/fonts/CustomFont.otf") format("opentype"), */
+    /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
+}
+@font-face {
+    font-family: "Avenir Book";
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Book.ttf");
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Book.ttf") format("ttf"),
+    /* url("./public/fonts/CustomFont.otf") format("opentype"), */
+    /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
+}
+@font-face {
+    font-family: "Avenir Heavy";
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Heavy.ttf");
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Heavy.ttf") format("ttf"),
+    /* url("./public/fonts/CustomFont.otf") format("opentype"), */
+    /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
+}
+@font-face {
+    font-family: "Avenir Regular";
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Regular.ttf");
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Regular.ttf") format("ttf"),
+    /* url("./public/fonts/CustomFont.otf") format("opentype"), */
+    /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
+}
+@font-face {
+    font-family: "Avenir Light";
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Light.ttf");
+    src: url("https://infiniteVerses.github.io/public/fonts/Avenir Light.ttf") format("ttf"),
+    /* url("./public/fonts/CustomFont.otf") format("opentype"), */
+    /* url("./public/fonts/CustomFont.svg#filename") format("svg"); */
+}
+
 .prompt {
     height: 125px;
     width: 350px;
     padding-left: 10%;
     padding-right: 10%;
-    font-family: "Avenir";
+    font-family: "Avenir Heavy";
     background-color: '#017877';
     overflow: hidden;
 }
 
 /* .currentPrompt {
     display: block;
-    font-family: "Avenir";
+    font-family: "Avenir Heavy";
 
 } */
 
 .inactivePrompt {
     display: none !important;
-    /* font-family: "Avenir"; */
+    /* font-family: "Avenir Heavy"; */
 
 }
-
+.btn-std {
+    border-radius: 15px;
+    height: 40px;
+    width: 60px;
+    background-color: '#dabb08';
+    /* margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2px; */
+    font-family: "Avenir Heavy";
+    font-size: 16px;
+    background: #dabb08;
+}
 .btn-submit {
     border-radius: 25px;
     height: 40px;
-    width: 80px;
-    /* margin: 25% 25% 25% 25%; */
-    font-family: "Avenir";
+    width: 245px;
+    margin-top: 10px;
+    font-family: "Avenir Heavy";
 
 }
 .btn-back {
@@ -38,7 +86,7 @@ body {
     margin-left: 15%;
     margin-right: 2px;
     margin-bottom: 2px;
-    font-family: "Avenir";
+    font-family: "Avenir Heavy";
 
 }
 .btn-reset {
@@ -48,14 +96,14 @@ body {
     margin-right: 15%;
     margin-left: 2px;
     margin-bottom: 2px;
-    font-family: "Avenir";
+    font-family: "Avenir Heavy";
 
 }
 
 .progressText {
     margin-top: 23.5px;
     margin-bottom: 25px;
-    font-family: "Avenir";
+    font-family: "Avenir Heavy";
     margin-left: 2%;
     margin-right: 2%;
 
@@ -64,19 +112,23 @@ body {
 .labelText {
     margin-top: 25px;
     margin-bottom: 7px;
-    font-family: "Avenir";
-    width: 190px;
+    font-family: "Avenir Heavy";
+    width: 245px;
+    font-size: 18px;
     
 }
 
 .entry {
     margin-top: 7px;
-    font-family: "Avenir";
-
+    font-family: "Avenir Heavy";
+    min-width: 245px;
+}
+.entry:focus {
+    background: #dabb08;
 }
 
 input .entry {
-    font-family: "Avenir";
+    font-family: "Avenir Heavy";
     width: 175px;
     
 }
@@ -87,9 +139,9 @@ input .entry {
     justify-content: center;
     height: 50px;
     width: 175px;
-    font-family: "Avenir";
-    margin-left: 10%;
-    margin-right: 10%;
+    font-family: "Avenir Heavy";
+    margin-left: 20%;
+    /* margin-right: 10%; */
     margin-top: -65px;
 }
 
@@ -100,8 +152,8 @@ input .entry {
     justify-content: center;
     height: 14px;
     width: 175px;
-    font-family: "Avenir";
-    margin-left: 2%;
-    margin-right: 10%;
+    font-family: "Avenir Heavy";
+    /* margin-left: 2%; */
+    /* margin-right: 10%; */
     /* margin-top: -65px; */
 }
