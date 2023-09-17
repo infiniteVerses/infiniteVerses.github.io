@@ -6,7 +6,11 @@ promptMultiOptions.set("#q-entry2", ["#p2-yes", "#p2-no", "#p2-yes-f", "#p2-no-f
 var promptOptionsCapitalsMatter = new Set();
 // promptOptionsCapitalsMatter.set("#q-entry2");
 var textAreaSet = new Set();
+// primitive types: string, int, boolean
+// basic objects: array, obj
+// fancy object: set, map
 textAreaSet.add("#q-entry3");
+var entryInputString = "";
 
 $(window).on('load', function() {
     console.log("singleForm.js loaded")
@@ -16,23 +20,27 @@ $(window).on('keypress',function(e) {
     console.log({e}, {keyCode});
     if(keyCode == '13' || keyCode == 'Enter'){
         $('#btn-next').trigger('click');
+        entryInputString = "";
         // e.preventDefault();
         // return false;
         
     } else if (keyCode == '39') {
         $('#btn-next').trigger('click');
+        entryInputString = "";
         // event.preventDefault();
         // return false;
     }
 
     var regex = /^[a-zA-Z0-9]+$/;
-    if (!regex.test(e.key)) {
+    if (!regex.test(e.key) || keyCode == "Enter" || keyCode == "13" || keyCode == "39") {
     //   e.preventDefault();
         console.log("invalid key", e.key)
     } else {
         if (currentPromptField == 0) {
 
         } else {
+            entryInputString += e.key;
+            
             if (promptMultiOptions.has(currentPromptField[currentPage-1])) {
                 var options = promptMultiOptions.get(currentPromptField[currentPage-1]);
                 console.log({options}, currentPromptField[currentPage-1])
@@ -48,6 +56,7 @@ $(window).on('keypress',function(e) {
                     } else if (keyCode.toLowerCase() == optionValue[0].toLowerCase()) {
                         $(options[i]).trigger('click');
                     }
+                    checkWholeString(keyCode, options[i], optionValue, currentPromptField[currentPage-1]);
                 }
             } else {
                 $(currentPromptField[currentPage-1]).focus();
@@ -57,6 +66,29 @@ $(window).on('keypress',function(e) {
     }
     
 });
+
+function checkWholeString(incomingValue, targetField, targetValue, entryParentId) {
+    console.log({entryInputString})
+    var tempTargetValueStr = '';
+
+    Array.from(targetValue).forEach(function (element) {
+        if (tempTargetValueStr.length < entryInputString.length) {
+            tempTargetValueStr += element;
+        }
+    });
+    console.log({tempTargetValueStr, entryInputString})
+
+    if (promptOptionsCapitalsMatter.has(entryParentId)) {
+        if (tempTargetValueStr == entryInputString) {
+            $(targetField).trigger('click');
+            
+        }
+    } else if (tempTargetValueStr.toLowerCase() == entryInputString.toLowerCase()) {
+        $(targetField).trigger('click');
+        
+    }
+
+}
 // $('.entry').on('keypress', function(e) {
 //     var keyCode = e.key;
 //     console.log({e}, {keyCode});
@@ -75,6 +107,7 @@ $(window).on('keypress',function(e) {
 
 $('#btn-next').on('click', function () {
     $('#btn-prev').prop('disabled', false);
+    entryInputString = "";
 
     console.log("next button clicked", {currentPage})
     if (currentPage <= maxPage) {
@@ -113,6 +146,7 @@ $('#btn-next').on('click', function () {
  });
 
  $('#btn-prev').on('click', function () {
+    entryInputString = "";
     // hide page before updating
     var beforePage = "#p"+ currentPage+"-container";
     if (currentPage > maxPage) {
