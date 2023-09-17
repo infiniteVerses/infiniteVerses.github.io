@@ -1,5 +1,6 @@
 body {
-    overflow: hidden;
+    overflow: visible;
+    height: 100%;
 }
 
 @font-face {
@@ -143,9 +144,10 @@ input.entry {
     max-height: 25px;
 }
 textarea.entry {
-    height: 25px;
+    height: 75px;
     font-size: 16px;
     font-family: "Avenir Heavy";
+    overflow: auto;
 }
 .flex-wrapper {
     display: flex;
@@ -158,6 +160,9 @@ textarea.entry {
     margin-left: 20%;
     /* margin-right: 10%; */
     margin-top: -40px;
+}
+.footer-textArea {
+    margin-top: 1px !important;
 }
 
 .radio-wrapper {

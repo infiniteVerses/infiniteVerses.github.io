@@ -1,5 +1,13 @@
 var currentPage = 1;
 var maxPage = 3;
+var currentPromptField = ["#q-entry1", "#q-entry2", "#q-entry3"];
+var promptMultiOptions = new Map();
+promptMultiOptions.set("#q-entry2", ["#p2-yes", "#p2-no", "#p2-yes-f", "#p2-no-f"]);
+var promptOptionsCapitalsMatter = new Set();
+// promptOptionsCapitalsMatter.set("#q-entry2");
+var textAreaSet = new Set();
+textAreaSet.add("#q-entry3");
+
 $(window).on('load', function() {
     console.log("singleForm.js loaded")
     
@@ -15,6 +23,37 @@ $(window).on('keypress',function(e) {
         $('#btn-next').trigger('click');
         // event.preventDefault();
         // return false;
+    }
+
+    var regex = /^[a-zA-Z0-9]+$/;
+    if (!regex.test(e.key)) {
+    //   e.preventDefault();
+        console.log("invalid key", e.key)
+    } else {
+        if (currentPromptField == 0) {
+
+        } else {
+            if (promptMultiOptions.has(currentPromptField[currentPage-1])) {
+                var options = promptMultiOptions.get(currentPromptField[currentPage-1]);
+                console.log({options}, currentPromptField[currentPage-1])
+                for (i=0; i < options.length; i++) {
+                    console.log(options[i], i);
+                    var optionValue = $(options[i]).val();
+                    console.log({optionValue, keyCode, options}, optionValue[0])
+                    
+                    if (promptOptionsCapitalsMatter.has(currentPromptField[currentPage-1])) {
+                        if (keyCode == optionValue[0]) {
+                            $(options[i]).trigger('click');
+                        }
+                    } else if (keyCode.toLowerCase() == optionValue[0].toLowerCase()) {
+                        $(options[i]).trigger('click');
+                    }
+                }
+            } else {
+                $(currentPromptField[currentPage-1]).focus();
+
+            }
+        }
     }
     
 });
@@ -63,6 +102,13 @@ $('#btn-next').on('click', function () {
     $(afterPage).addClass('currentPrompt');
     $(afterPage).removeClass('inactivePrompt');
 
+    if (textAreaSet.has(currentPromptField[currentPage-1])) {
+        $('#prompt-footer').addClass('footer-textArea');
+    } else {
+        $('#prompt-footer').removeClass('footer-textArea');
+
+    }
+
     console.log({beforePage, afterPage, currentPage, maxPage})
  });
 
@@ -98,6 +144,13 @@ $('#btn-next').on('click', function () {
     // $('#prompt-footer').removeClass('inactivePrompt');
     // $('#final-header').addClass('inactivePrompt');
     $('#btn-next').prop('disabled', false);
+
+    if (textAreaSet.has(currentPromptField[currentPage-1])) {
+        $('#prompt-footer').addClass('footer-textArea');
+    } else {
+        $('#prompt-footer').removeClass('footer-textArea');
+
+    }
     console.log({beforePage, afterPage, currentPage, maxPage})
  });
 
