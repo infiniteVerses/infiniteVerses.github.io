@@ -18,13 +18,13 @@ $(window).on('load', function() {
 $(window).on('keypress',function(e) {
     var keyCode = e.key;
     console.log({e}, {keyCode});
-    if(keyCode == '13' || keyCode == 'Enter'){
+    if(keyCode == '13' || keyCode == 'Enter' && e.shiftKey == false){
         $('#btn-next').trigger('click');
         entryInputString = "";
         // e.preventDefault();
         // return false;
         
-    } else if (keyCode == '39') {
+    } else if (keyCode == '39' && e.shiftKey == false) {
         $('#btn-next').trigger('click');
         entryInputString = "";
         // event.preventDefault();
