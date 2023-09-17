@@ -70,7 +70,7 @@ body {
     border-radius: 25px;
     height: 40px;
     width: 245px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-family: "Avenir Heavy";
     font-size: 18px;
     background: #dabb08;
@@ -125,14 +125,14 @@ body {
 }
 
 .entry {
-    margin-top: 25px;
+    margin-top: 15px;
     border-radius: 5px;
     font-family: "Avenir Heavy";
     min-width: 245px;
 }
 .entry:focus {
     border: #dabb08 solid 3.5px;
-    box-shadow: 0 0 50px 10px #dabb08;
+    box-shadow: 0 0 50px 6px #dabb08;
     
 }
 
@@ -157,7 +157,7 @@ textarea.entry {
     font-family: "Avenir Heavy";
     margin-left: 20%;
     /* margin-right: 10%; */
-    /* margin-top: -15px; */
+    margin-top: -40px;
 }
 
 .radio-wrapper {
@@ -167,10 +167,10 @@ textarea.entry {
     justify-content: center;
     height: 14px;
     border-radius: 15px;
-    margin-top: 25px;
+    margin-top: 15px;
     width: 175px;
     font-family: "Avenir Heavy";
-    box-shadow: 0 0 50px 10px #dabb08 !important;
+    box-shadow: 0 0 50px 6px #dabb08 !important;
     border: #dabb08 solid 0px;
 
     /* margin-left: 2%; */
@@ -187,4 +187,10 @@ textarea.entry {
 .flex-itemRow {
     font-size: 18px;
     font-family: "Avenir Heavy";
+}
+
+@media only screen and (max-width: 600px) {
+    .labelText, .entry, .btn-submit, .flex-itemROw  {
+        font-size: 14px !important;
+    }
 }
