@@ -117,8 +117,7 @@ body {
     margin-top: 25px;
     margin-bottom: 7px;
     font-family: "Avenir Heavy";
-    color: #dabb08;
-    -webkit-text-stroke: 0.25px black;
+    color: #f2d488;
 
     width: 245px;
     font-size: 18px;
@@ -148,6 +147,8 @@ textarea.entry {
     font-size: 16px;
     font-family: "Avenir Heavy";
     overflow: auto;
+    box-shadow: 0 0 50px 3px #dabb08;
+
 }
 .flex-wrapper {
     display: flex;
