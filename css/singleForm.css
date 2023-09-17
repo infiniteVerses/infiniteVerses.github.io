@@ -110,7 +110,7 @@ body {
     font-family: "Avenir Heavy";
     margin-left: 2%;
     margin-right: 2%;
-
+    color: #f2d488
 }
 
 .labelText {
@@ -150,17 +150,21 @@ textarea.entry {
     box-shadow: 0 0 50px 3px #dabb08;
 
 }
+#prompt-footer {
+    height: 50px;
+    width: 175px;
+    margin-left: 15%;
+    /* margin-right: 10%; */
+    margin-top: -40px;
+}
 .flex-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 175px;
+   
     font-family: "Avenir Heavy";
-    margin-left: 20%;
-    /* margin-right: 10%; */
-    margin-top: -40px;
+    
 }
 .footer-textArea {
     margin-top: 1px !important;
