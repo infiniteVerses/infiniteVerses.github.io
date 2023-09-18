@@ -133,7 +133,7 @@ body {
 .entry:focus {
     border: #dabb08 solid 3.5px;
     box-shadow: 0 0 50px 6px #dabb08;
-    
+    overflow:visible;
 }
 
 input.entry {
@@ -147,7 +147,7 @@ textarea.entry {
     font-size: 16px;
     font-family: "Avenir Heavy";
     overflow: auto;
-    box-shadow: 0 0 50px 3px #dabb08;
+    box-shadow: 0 0 15px 3px #dabb08 !important;
 
 }
 #prompt-footer {
@@ -182,7 +182,7 @@ textarea.entry {
     font-family: "Avenir Heavy";
     box-shadow: 0 0 50px 6px #dabb08 !important;
     border: #dabb08 solid 0px;
-
+    overflow: visible;
     /* margin-left: 2%; */
     /* margin-right: 10%; */
     /* margin-top: -65px; */
