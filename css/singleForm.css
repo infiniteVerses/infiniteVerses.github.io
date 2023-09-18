@@ -62,7 +62,7 @@ body {
     margin-bottom: 2px; */
     font-family: "Avenir Heavy";
     font-size: 16px;
-    color: #dabb08;
+    color: #f2d488;
     /* -webkit-text-stroke: 0.5px black; */
     background: #698869;
     box-shadow: 0 0 10px 3px #698869;
@@ -188,7 +188,7 @@ textarea.entry {
     /* margin-top: -65px; */
 }
 .radioText {
-    color: #dabb08 !important;
+    color: #f2d488 !important;
     font-size: 18px !important;
     font-family: "Avenir Heavy" !important;
     -webkit-text-stroke: 0.15px black;
